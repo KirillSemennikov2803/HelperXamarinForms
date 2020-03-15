@@ -1,0 +1,16 @@
+﻿################################################################################
+# Данный GITIGNORE-файл был автоматически создан Microsoft(R) Visual Studio.
+################################################################################
+/.vs/MegaSuperHelper/v16
+/*/bin/Debug
+/*/obj
+/.vs/semens_helper
+/semens_helper/semens_helper/bin/Debug/netstandard2.0
+/semens_helper/semens_helper/obj
+/semens_helper/semens_helper.Android/bin/Debug
+/semens_helper/semens_helper.Android/obj
+/semens_helper/semens_helper.iOS/obj/iPhone/Debug
+/semens_helper/semens_helper.iOS/obj
+/semens_helper/semens_helper.UWP/bin/x86/Debug
+/semens_helper/semens_helper.UWP/obj/ARM/Debug
+/semens_helper/semens_helper.UWP/obj

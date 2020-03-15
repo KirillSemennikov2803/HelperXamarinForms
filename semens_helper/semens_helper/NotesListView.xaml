@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="semens_helper.NotesListView">
+    <StackLayout>
+        <ListView x:Name="ListViewNotes"
+                  ItemTapped="ListViewNotes_ItemTapped">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <StackLayout BackgroundColor="#eee"
+                        Orientation="Vertical">
+                            <StackLayout Orientation="Vertical">
+                                <Label Text="{Binding title}"
+                                TextColor="#f35e20" />
+                                <Label Text="{Binding subtitle}"
+                                VerticalOptions="StartAndExpand"
+                                TextColor="#503026" />
+                            </StackLayout>
+                        </StackLayout>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+        <Button Text="Добавить новую заметуц" 
+                Clicked="OnAddNewNoteClicked" />
+    </StackLayout>
+</ContentPage>
